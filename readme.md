@@ -30,22 +30,28 @@ If you have questions on the challenge, please contact Jared Sartin: jared@leftf
 
 # Problem definition
 
-After analysing I realized that it is an NP - Hard problem. If the sample data had only very less number of venues, it could have solved with Bound and branch approach. But if we take 40 venues, to solve using Branch and Bound, it will have 40! = 815915283247897734345611269596115894272000000000 different options. So a deterministic solution is impossible for the same. 
+
+The given problem is an NP-Hard problem which maps to the classic Travellings alesman problem(TSP). There are different flavours of solutions to this problem:
+* Deterministic but computationally heavy(BruteForce and DynamicProgramming) (Will work for small data-sets)
+* Non-deterministic but computationally lighter (Will work for practical use-cases that typically involve a lot of nodes)
+If we take 40 venues, to solve using Branch and Bound, it will have 40! = 815915283247897734345611269596115894272000000000 different options. So a deterministic solution is impossible for the same. 
 
 # Solution 
 
-This problem can be solved using genetic algorithm. The coding is done based on a genetic algorithm. There are three files for the solution. 
-
-1. Index.html
-2. visualizer.js
-    I have used P5 library for the visualizations. This library has inbuilt functions for visualization, shuffle, dist etc. The dist function in P5 was used to calculate the distance between the venues. The visualization is done such a way that the best solution found is displayed in White and each trial is displayed in black color. 
+The solution that I  came up with uses a genetic algorithm based on [https://en.wikipedia.org/wiki/Genetic_algorithm]. The implementation comprises of 3 files:
+* Index.html
+* visualizer.js
+    I have used P5 [Insert reference] library for the visualizations. This library has inbuilt functions for visualization, shuffle, dist etc. The dist function in P5 was used to calculate the distance between the venues. The visualization is done such a way that the best solution found is displayed in White and each trial is displayed in black color. 
 
     Example optimum solution for the 40 venues : 
     
     ![](images/40venuessolution.png)
 
-3. ga.js 
-    This file has the genetic algorithm code. 
+*  ga.js 
+    This file has the genetic algorithm code.
+
+This problem can be solved using genetic algorithm. The coding is done based on a genetic algorithm. There are three files for the solution. 
+
 
 ### How to run the project? 
 
@@ -67,4 +73,4 @@ python3 -m http.server 8002
 * In order to see how it runs, you can comment the 40 venues and uncomment the 200 venues or 500 venues. At any given point, you can see the best solution in White and current best in Black. 
 
 
-It is the initial commit and the solution will be improved 
+It is the initial commit and the solution will be improved. 

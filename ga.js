@@ -55,7 +55,6 @@ function crossOver(orderA, orderB) {
   var start = floor(random(orderA.length));
   var end = floor(random(start + 1, orderA.length));
   var neworder = orderA.slice(start, end);
-  // var left = totalCities - neworder.length;
   for (var i = 0; i < orderB.length; i++) {
     var city = orderB[i];
     if (!neworder.includes(city)) {
