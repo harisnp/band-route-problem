@@ -38,7 +38,7 @@ If we take 40 venues, to solve using Branch and Bound, it will have 40! = 815915
 
 # Solution 
 
-The solution that I  came up with uses a genetic algorithm based on [https://en.wikipedia.org/wiki/Genetic_algorithm]. The implementation comprises of 3 files:
+The solution that I  came up with uses genetic algorithm (https://en.wikipedia.org/wiki/Genetic_algorithm). The implementation comprises of 3 files:
 * Index.html
 * visualizer.js
     I have used P5 [Insert reference] library for the visualizations. This library has inbuilt functions for visualization, shuffle, dist etc. The dist function in P5 was used to calculate the distance between the venues. The visualization is done such a way that the best solution found is displayed in White and each trial is displayed in black color. 
