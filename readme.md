@@ -43,12 +43,8 @@ This problem can be solved using genetic algorithm. The coding is done based on 
     I have used P5 library for the visualizations. This library has inbuilt functions for visualization, shuffle, dist etc. The dist function in P5 was used to calculate the distance between the venues. The visualization is done such a way that the best solution found is displayed in White and each trial is displayed in black color. 
 
     Example optimum solution for the 40 venues : 
-
     
-
-
-
-
+    ![](images/40venuessolution.png)
 
 3. ga.js 
     This file has the genetic algorithm code. 
