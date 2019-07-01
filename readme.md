@@ -28,3 +28,29 @@ If you have questions on the challenge, please contact Jared Sartin: jared@leftf
 # Candidate Notes:
 
 ### Fill in comments, external tool usage, and time tracking
+
+
+# Problem definition
+
+After analysing I realized that it is an NP - Hard problem. If the sample data had only very less number of venues, it could have solved with Bound and branch approach. But if we take 40 venues, to solve using Branch and Bound, it will have 40! = 815915283247897734345611269596115894272000000000 different options. So a deterministic solution is impossible for the same. 
+
+# Solution 
+
+This problem can be solved using genetic algorithm. The coding is done based on a genetic algorithm. There are three files for the solution. 
+
+1. Index.html
+2. visualizer.js
+    I have used P5 library for the visualizations. This library has inbuilt functions for visualization, shuffle, dist etc. The dist function in P5 was used to calculate the distance between the venues. The visualization is done such a way that the best solution found is displayed in White and each trial is displayed in black color. 
+
+    Example optimum solution for the 40 venues : 
+
+    
+
+
+
+
+
+3. ga.js 
+    This file has the genetic algorithm code. 
+
+
