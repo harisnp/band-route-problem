@@ -58,7 +58,11 @@ python3 -m http.server 8002
 ### How to change the data set?
 
 * On the top of the visualizer.js file, I have copied all the data given. 
-* // var points = [{"x":116,"y":404},{"x":161,"y":617},{"x":16,"y":97}, {"x":430,"y":536}, {"x":601,"y":504}]; This was added intially while writing the code. 
+
+* The following data is added during the initial development. 
+```
+ // var points = [{"x":116,"y":404},{"x":161,"y":617},{"x":16,"y":97}, {"x":430,"y":536}, {"x":601,"y":504}]; 
+ ```
 * By default the 40 venues data is selected. 
 * In order to see how it runs, you can comment the 40 venues and uncomment the 200 venues or 500 venues. At any given point, you can see the best solution in White and current best in Black. 
 
